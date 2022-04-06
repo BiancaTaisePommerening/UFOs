@@ -29,3 +29,36 @@ data.forEach((dataRow) => {
     );
 });
 
+// create a function called "handleClick" to handle what to do after an input is given.
+
+function handleClick() {
+    // tell D3 to look for the #datetime id in the HTML tags using d3.select("#datetime").
+    // tell D3 to look for where our date values are stored on the webpage and grab that information and
+    // hold it in the "date" variable using .property("value");
+    let date = d3.select("#datetime").property("value");
+    // set a default filter and save it to a new variable.
+    let filteredData = tableData;
+    // Check to see if a date was entered and filter the
+    // data using that date.
+    if (date) {
+        // Apply `filter` to the table data to only keep the
+        // rows where the `datetime` value matches the filter value
+        filteredData = filteredData.filter(row => row.datetime === date);
+    }
+
+    // Rebuild the table using the filtered data 
+    // NOTE@: If no date was entered, the filteredData will
+    // just be the original tabelData.
+    buildTable(filteredData);
+}
+
+// Attach  an event to listen for the form button
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+// Build the table when the page loads
+buildTable(tableData);
+
+
+
+
+}
