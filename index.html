@@ -15,19 +15,19 @@
     <!-- add a link to our stylesheet file called style.css that's in our css folder. -->
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark">
     <!-- begin setting up the body of the HTM where we will store our components-->
     <div class="wrapper">
         <!-- Add a Navbar  -->
         <!-- Specifying "navbar-expand-lg" provides extra responsiveness to the default navbar behavior. -->
         <!-- When the viewing area is reduced from a large to a smaller screen, the navbar will collapse or resize itself smoothly. -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <!-- add functionality to the navbar by linking to the homepage, index.html. -->
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
         <!-- add a jumbotron with a header that reads "The Truth Is Out There." -->
         <div class="jumbotron">
-            <h1>The Truth Is Out There</h1>
+            <h1 class="display-4">The Truth is Out There</h1>
         </div>
         <!-- create a div with a class of "container-fluid," then nest a row within it. -->
         <div class="container-fluid">
@@ -51,52 +51,42 @@
                 <!-- create a div with space for three columns -->
                 <div class="col-md-3">
                     <!-- add a form tag, then build the form by nesting additional elements within it -->
-                    <form>
+                    <form class="bg-dark" action="">
                         <p>Filter Search</p>
+                        <!-- create a set of list tags, nested within an unordered list tag -->
+                        <ul class="list-group bg-dark">
+                             <!-- Input -->
+                            <li class="list-group-item bg-dark">
+                                <!-- add the label tag that serves as the caption for the date item -->
+                                <label for="date">Enter Date</label>
+                                <input type="text" class="form-control" placeholder="1/10/2010" id="datetime" />
+                            </li>
+                        </ul>
                     </form>
-                    <!-- create a set of list tags, nested within an unordered list tag -->
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <!-- add the label tag that serves as the caption for the date item -->
-                            <label for="date">Enter Date</label>
-                            <!-- add the input -->
-                            <input type="text" placeholder="1/10/2010" id="datetime" />
-                        </li>
-                        <li class="list-group-item">
-                            <!-- add the button -->
-                            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                        </li>
-                    </ul>
                 </div>
                 <!-- create a nine-column div for the table -->
                 <div class="col-md-9">
                     <!-- construct the table HTML -->
                     <table class="table table-striped">
                         <thead>
-                          <tr>
-                            <th>Date</th>
-                            <th>City</th>
-                            <th>State</th>
-                            <th>Country</th>
-                            <th>Shape</th>
-                            <th>Duration</th>
-                            <th>Comments</th>
-                          </tr>
+                            <tr>
+                                <th>Date</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Country</th>
+                                <th>Shape</th>
+                                <th>Duration</th>
+                                <th>Comments</th>
+                            </tr>
                         </thead>
                         <tbody></tbody>
                     </table>
                 </div>
             </div>
-                <p>
-
-                </p>
-            </div>
         </div>
-
-
-  
-
-
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
 </body>
 </html>
