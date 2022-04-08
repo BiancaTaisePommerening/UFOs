@@ -8,7 +8,8 @@ The purpose of this project was to build a dynamic webpage that accepts user inp
 
 
 
-## Results
+
+# Design Solution
 
 - A table was created to hold the UFOs data
 - Filters for searching criteria were added to that table 
@@ -17,14 +18,37 @@ The purpose of this project was to build a dynamic webpage that accepts user inp
 - Basic HTML, Bootstrap, and CSS were used to build ans style the webpage.
 
 
+## Results
 
-![](./images/.png)
+How the search criteria process works on this website?
 
-![](./images/.png)
+- UFOs Sighting webpage
+    - Header, article summary, and brief article.
+    
+![UFO_webpage.png](./static/images/UFO_webpage.png)
 
-![](./images/.png)
 
-![](./images/.png)
+- Data Table without any filter applyied
+
+![no_filter](./static/images/no_filter.png)
+
+
+- Apllying one filter
+    - Enter Date: 1/12/2010
+
+![one_filter](./static/images/one_filter.png)
+
+- Apllying two filters
+    - Enter Date: 1/12/2010
+    - Enter a city: wichita
+
+![two_filters](./static/images/two_filters.png)
+
+
+
+
+
+
 
 ![](./images/.png)
 
