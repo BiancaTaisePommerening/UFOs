@@ -3,9 +3,20 @@ UFO Sightings with JavaScript
 
 ## Project Overview
 
+The purpose of this project was to build a dynamic webpage that accepts user inputs, where the user can filter through multiple options, on which the website visually displays the result of the selection criteria simultaniously and at the same time deliver a visualy appeling and interactive webpage.
+
+
 
 
 ## Results
+
+- A table was created to hold the UFOs data
+- Filters for searching criteria were added to that table 
+- The table was then inserted on the index.html file
+- A header, article summary, and brief article were added to the page.
+- Basic HTML, Bootstrap, and CSS were used to build ans style the webpage.
+
+
 
 ![](./images/.png)
 
@@ -29,6 +40,9 @@ UFO Sightings with JavaScript
 
 Overview of Project: Explain the purpose of this analysis.
 The purpose is well defined (2 pt)
+
+
+
 
 Results: Describe to Dana how someone might use the new webpage by walking her through the process of using the search criteria. Use images of your webpage during the filtering process to support your explanation.
 There is a description of how to perform a search, with images. (4 pt)
