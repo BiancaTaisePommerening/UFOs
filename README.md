@@ -3,7 +3,7 @@ UFO Sightings with JavaScript
 
 ## Project Overview
 
-The purpose of this project was to build a dynamic webpage that accepts user inputs, where the user can filter through multiple options, on which the website visually displays the result of the selection criteria simultaneously and at the same time deliver a visually appealing and interactive webpage.
+The purpose of this project was to build a dynamic webpage about UFOs that accepts user inputs, where the user can filter through multiple options, on which the website visually displays the result of the selection criteria simultaneously and at the same time deliver a visually appealing and interactive webpage.
 
 
 
@@ -13,7 +13,7 @@ The purpose of this project was to build a dynamic webpage that accepts user inp
 - Filters for searching criteria were added to that table 
 - The table was then inserted on the index.html file
 - A header, article summary, and brief article were added to the page.
-- Basic HTML, Bootstrap, and CSS were used to build ans style the webpage.
+- Basic HTML, Bootstrap, and CSS were used to build and style the webpage.
 
 
 ## Results
@@ -33,14 +33,14 @@ The purpose of this project was to build a dynamic webpage that accepts user inp
 
 ### Search Criteria
 
-In order to use the search option, the user would click on the space where it says "Enter Date" and enter the date of their choice to see if there was any UFO been seen on that specific date.
+In order to use the search option, the user would click on the input field where it says "1/10/2010" and enter the date of their choice to see if there was any UFO been seen on that specific date.
 
 - Applying one filter
     - Enter Date: "1/12/2010"
 
 ![one_filter](./static/images/one_filter.png)
 
-To add another filter, for example a city, on the space where it says "chicago", which is the default city set as the example, the user would type the desired city such as "wichita". Now both the Date and City filters have been applied, and the results from that are displayed on the table data to the right of the search options. Every time a user changes the inputs on the filters, the table changes accordingly to display the results.
+To add another filter, for example a city, on the input field that says where it says "chicago", which is the default city set as the example, the user would type the desired city such as "wichita". Now both the Date and City filters have been applied, and the results from that are displayed on the table data to the right of the search options. Every time a user changes the inputs on the filters, the table changes accordingly to display the results.
 
 
 - Applying two filters
@@ -51,29 +51,33 @@ To add another filter, for example a city, on the space where it says "chicago",
 
 
 
-
-
-
 ## Summary
 
-- Drawback
+### Drawback
 
-- Additional Recommendations
+Its more efficient to have a date range instead of a specific date, in order to avoid the user selecting a date where there are no results. 
+
+### Additional Recommendations
+
+- when clicked on any input field the suggested value should be erased so that the user can see a clear field, that helps to avoid confusing for the user as it is not clear if an input has been inserted or not.
+
+- The default placeholders could be modified to more clear options. For example, the date format "mm/dd/yyyy" could be the placeholder instead of having an actual date.
+
+- Add a message to be displayed in case there are no values returned, for example: "Your search returned no results."
+
+- Add a message for possible typing errors, for example: "the date entered is not on the correct format, please use mm/dd/yyyy."
+
+- This is a small amount of data, but in case it was a large dataset bad performance of the website could happen so in order to avoid that it would be interesting to add a message to the user that at least one field has to be filled. 
+
+- Add the autocomplete attribute for the inputs, so when the user starts typing the program predicts the rest of the word.
+
+- Another really nice option would be to a dropdown list for the city, state, country and shape to make it easy to choose only options that will actually return values.
 
 
 
-Overview of Project: Explain the purpose of this analysis.
-The purpose is well defined (2 pt)
 
 
 
-
-Results: Describe to Dana how someone might use the new webpage by walking her through the process of using the search criteria. Use images of your webpage during the filtering process to support your explanation.
-There is a description of how to perform a search, with images. (4 pt)
-
-Summary: In a summary statement, describe one drawback of this new design and two recommendations for further development.
-The summary addresses one drawback of this webpage (2 pt)
-The summary addresses two additional recommendations for further development (4 pt)
 
 
 
