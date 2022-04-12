@@ -59,7 +59,7 @@ Its more efficient to have a date range instead of a specific date, in order to 
 
 ### Additional Recommendations
 
-- when clicked on any input field the suggested value should be erased so that the user can see a clear field, this would help to avoid confusion for the user as it is not clear if an input has been inserted or not.
+- When clicked on any input field the suggested value should be erased so that the user can see a clear field, this would help to avoid confusion for the user as it is not clear if an input has been inserted or not.
 
 - The default placeholders could be modified to more clear options. For example, the placeholder for the date could be the date format "mm/dd/yyyy".
 
