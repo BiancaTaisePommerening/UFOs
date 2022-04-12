@@ -59,19 +59,19 @@ Its more efficient to have a date range instead of a specific date, in order to 
 
 ### Additional Recommendations
 
-- when clicked on any input field the suggested value should be erased so that the user can see a clear field, that helps to avoid confusing for the user as it is not clear if an input has been inserted or not.
+- when clicked on any input field the suggested value should be erased so that the user can see a clear field, this would help to avoid confusion for the user as it is not clear if an input has been inserted or not.
 
-- The default placeholders could be modified to more clear options. For example, the date format "mm/dd/yyyy" could be the placeholder instead of having an actual date.
+- The default placeholders could be modified to more clear options. For example, the placeholder for the date could be the date format "mm/dd/yyyy".
 
 - Add a message to be displayed in case there are no values returned, for example: "Your search returned no results."
 
 - Add a message for possible typing errors, for example: "the date entered is not on the correct format, please use mm/dd/yyyy."
 
-- This is a small amount of data, but in case it was a large dataset bad performance of the website could happen so in order to avoid that it would be interesting to add a message to the user that at least one field has to be filled. 
+- This is a small amount of data, but in case it was a large dataset bad performance of the website could happen, so in order to avoid that it would be interesting to add a message to the user that at least one field has to be filled. 
 
 - Add the autocomplete attribute for the inputs, so when the user starts typing the program predicts the rest of the word.
 
-- Another really nice option would be to a dropdown list for the city, state, country and shape to make it easy to choose only options that will actually return values.
+- Another really nice option would be to add a dropdown list for the city, state, country and shape to make it easier to choose only options that will return values.
 
 
 
