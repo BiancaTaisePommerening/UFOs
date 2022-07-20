@@ -14,6 +14,7 @@
     />
     <!-- add a link to our stylesheet file called style.css that's in our css folder. -->
     <link rel="stylesheet" href="static/css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script> 
 </head>
 <body class="bg-dark">
     <!-- begin setting up the body of the HTM where we will store our components-->
@@ -113,4 +114,9 @@
     <script src="static/js/data.js"></script>
     <script src="static/js/app.js"></script>
 </body>
+<script>
+    create_gauge_plot("{{predict}}")
+    var user = eval('({{ form_reuse | tojson | safe}})');
+    repopulate(user);
+</script>
 </html>
